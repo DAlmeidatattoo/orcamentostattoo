@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento de Tatuagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Orçamento de Tatuagens</h1>
+        <form id="tattooForm">
+            <label for="tamanho">Tamanho (cm):</label>
+            <input type="number" id="tamanho" name="tamanho" required>
+
+            <label for="estilo">Estilo:</label>
+            <select id="estilo" name="estilo" required>
+                <option value="realismo">Realismo</option>
+                <option value="neotradicional">Neotradicional</option>
+                <option value="oldschool">Oldschool</option>
+                <option value="boldline">Boldline</option>
+                <option value="fineline">Fineline</option>
+            </select>
+
+            <label for="cores">Quantidade de Cores:</label>
+            <input type="number" id="cores" name="cores" required>
+
+            <label for="tempo">Tempo Gasto (horas):</label>
+            <input type="number" id="tempo" name="tempo" required>
+
+            <button type="button" onclick="calcularOrcamento()">Calcular Orçamento</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
